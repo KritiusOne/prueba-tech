@@ -1,10 +1,13 @@
 import {useState,useEffect} from 'react';
 import '../STYLE-SHEET/imgComponent.css'
 
-const apiKeyNews = 'https://hn.algolia.com/api/v1/search?query=dev';
-const apiImg = 'https://dog.ceo/api/breeds/image/random'
 
-export function useNoticia(){
+const apiImg = 'https://dog.ceo/api/breeds/image/random';
+
+
+export function useNoticia(NumPage, hits){
+  const apiKeyNews =`https://hn.algolia.com/api/v1/search_by_date?query=nbPages=${NumPage}&hitsPerPage=${hits}`;
+
   const [noticias, setNoticias] = useState([]);
   useEffect(()=>{
     fetch(apiKeyNews)
@@ -14,10 +17,11 @@ export function useNoticia(){
       setNoticias(response.hits)
     })
     .catch(err => console.log(err));
-  }, [])
+  }, [apiKeyNews])
   return noticias;
 }
-export function ImgComponent({title}){
+
+export function ImgComponent({title,cls}){
   const [img, setImg] = useState('');
   useEffect(()=>{
     fetch(apiImg)
@@ -26,8 +30,7 @@ export function ImgComponent({title}){
   }, [])
   return (
     <>
-      <img className='App__noticiasPreview__noticia--img' src={img} alt={title} />
+      <img className={cls} src={img} alt={title} />
     </>
-    
   )
 }
