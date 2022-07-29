@@ -1,0 +1,6 @@
+.App__noticiasPreview__noticia--img{
+    width: 50%;
+    height: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
