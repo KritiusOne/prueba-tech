@@ -1,7 +1,7 @@
 import './App.css';
-import { NoticiasPreview } from './components/NoticiasPreview/NoticiasPreview.jsx';
+import { NoticiasPreview } from './views/NoticiasPreview/NoticiasPreview.jsx';
 import {Route} from 'wouter';
-import {NoticiaView} from './components/NoticiaView/NoticiaView.jsx'
+import {NoticiaView} from './views/NoticiaView/NoticiaView.jsx'
 function App() {
   return (
     <div className="App">

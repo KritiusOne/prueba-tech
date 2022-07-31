@@ -1,0 +1,37 @@
+.App-button-back{
+  position: fixed;
+  font-size: 36px;
+  grid-column: 0/1;
+  background-color: #EB4954;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+  width: 60px;
+  padding: 5px 10px ;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.App-button-back-Link{
+  width: 100%;
+  cursor: pointer;
+}
+@media screen  and (max-width: 480px){
+    .App-button-back{
+      width: 30%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .App-button-back{
+    width: 30%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px){
+  .App-button-back{
+    width: 15%;
+    height: 50px;
+  }
+}

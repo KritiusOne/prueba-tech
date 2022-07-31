@@ -12,20 +12,6 @@
   background-color: #d1d1d1;
 
 }
-.App__noticiasPreview__noticia-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.App__noticiasPreview__noticia--title{
-  text-align: center;
-}
-.App__noticiasPreview__noticia--link{
-  text-decoration: none;
-  border: 1px solid #000;
-  text-align: center;
-}
-
 @media screen  and (max-width: 480px){
   .App__noticiasPreview{
     display: grid;

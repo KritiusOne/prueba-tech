@@ -1,0 +1,23 @@
+.App__noticiasPreview__card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 5px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.App__noticiasPreview__card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.App__noticiasPreview__card--title{
+    text-align: center;
+}
+.App__noticiasPreview__card--link{
+    text-decoration: none;
+    border: 1px solid #000;
+    text-align: center;
+}
+  
