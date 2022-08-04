@@ -1,4 +1,6 @@
-export function Newspaper({noticia}){
+import { useDetails } from "../../hooks/useDetails"
+export function Newspaper(){
+  const noticia = useDetails()
   return(
     <div className="App__NoticiaView__data__article">
       <h5 className="App__NoticiaView__data__article--title article--item">

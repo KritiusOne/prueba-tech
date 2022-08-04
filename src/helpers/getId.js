@@ -1,3 +1,3 @@
 export function getId (noticia){
-  return noticia.story_id === null ? noticia.objectID : noticia.story_id;
+  return noticia.created_at_i === null ? noticia.objectID : noticia.created_at_i
 }

@@ -1,15 +1,12 @@
-import {useState,useEffect} from 'react';
+import { useContext, useEffect } from 'react';
+import { dataContext } from '../context/DataContext';
 
-export function useNoticia(NumPage, hits){
-  const apiKeyNews =`https://hn.algolia.com/api/v1/search_by_date?query=nbPages=${NumPage}&hitsPerPage=${hits}`;
-  const [noticias, setNoticias] = useState([]);
-  useEffect(()=>{
-    fetch(apiKeyNews)
-    .then(res => res.json())
-    .then(response => {
-      setNoticias(response.hits)
-    })
-    .catch(err => console.log(err));
-  }, [apiKeyNews])
-  return noticias;
+export function useNoticia() {
+  const notiContext = useContext(dataContext)
+  useEffect(() => {
+    notiContext.getNews()
+  }, [])
+  console.log(notiContext.news)
+
+  return notiContext.news
 }

@@ -1,0 +1,2 @@
+export const GET_NOTICIAS = 'GET_NOTICIAS';
+export const SELECT_NOTICIA = 'SELECT_NOTICIA';

@@ -7,7 +7,6 @@ import '../../STYLE-SHEET/buttonView.css'
 
 export function NoticiaView(){
   const noticia = useDetails();
-  console.log(noticia)
   return (
     <div className="App__NoticiaView">
         <Back />
