@@ -5,7 +5,6 @@
   background-color: #EB4954;
   display: flex;
   text-decoration: none;
-  color: #fff;
   height: 40px;
   width: 60px;
   padding: 5px 10px ;
@@ -14,9 +13,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 80px;
+  cursor: pointer;
+  background-color: #fff;
 }
 .App-button-back-Link{
-  width: 100%;
+  color: #EB4954;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
 @media screen  and (max-width: 480px){

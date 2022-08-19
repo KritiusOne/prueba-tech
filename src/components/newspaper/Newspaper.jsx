@@ -1,6 +1,9 @@
-import { useDetails } from "../../hooks/useDetails"
+import { useContext } from "react"
+import { dataContext } from "../../context/DataContext"
+
 export function Newspaper(){
-  const noticia = useDetails()
+  const data = useContext(dataContext)
+  const noticia = data.selectedNew
   return(
     <div className="App__NoticiaView__data__article">
       <h5 className="App__NoticiaView__data__article--title article--item">

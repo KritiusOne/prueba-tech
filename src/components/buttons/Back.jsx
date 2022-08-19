@@ -4,10 +4,8 @@ import './back.css'
 
 export function Back(){
   return(
-    <div  className='App-button-back'>
-      <Link to='/' className='App-button-back-Link'>
-      <BsFillArrowLeftSquareFill />
+    <Link to='/' className='App-button-back'>
+      <BsFillArrowLeftSquareFill className='App-button-back-Link'/>
     </Link>
-    </div>
   )
 }
